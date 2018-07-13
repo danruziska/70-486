@@ -1,0 +1,17 @@
+﻿   
+@*Exemplo de modelo de domínio
+Nessa abordagem, a model representa diretamente o dado que foi buscado (uma lista de objetos do tipo Blog)*@
+   
+@model List<ModelApproaches.Entities.Blog>
+
+@{
+    ViewBag.Title = "Lista de Blogs";
+}
+
+<h2>Blogs</h2>
+<ul>
+    @foreach (var m in Model)
+    {
+        <li>@m.Name</li>
+    }
+</ul>

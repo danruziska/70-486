@@ -1,0 +1,26 @@
+﻿@model ModelApproaches.ViewModel.BlogViewModel
+
+@{
+    ViewBag.Title = "Blogs and Posts";
+}
+
+<h2>Blogs</h2>
+<ul>
+    @foreach (var b in Model.Blogs)
+    {
+        <li>@b.Name</li>
+    }
+</ul>
+
+<br />
+<br />
+
+<h2>Posts</h2>
+<ul>
+    @foreach (var p in Model.Posts)
+    {
+        <li>@p.Title</li>
+    }
+</ul>
+
+
